@@ -1,0 +1,5 @@
+body{background:#00f}
+.btn{background:#f00;border:1px solid #ffa500;color:#fff;border-radius:5px;text-transform:uppercase;}
+.btn.yellow{background:#ff0}
+.padre{background:#fff;padding:200px;}
+.padre .hijo{font-size:100px}
