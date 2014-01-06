@@ -15,6 +15,7 @@ header
 	overflow hidden //cuando se cambia la resolucion se sale el logo 
 	padding 0.5em
 	position relative
+	z-index 2
 
 	.logo
 		border-right 1px solid azul
@@ -75,6 +76,17 @@ header
 nav 
 	background azul
 	border-left 15px solid white
+	position relative
+
+	&:before
+		border-bottom 20px solid transparent //triangulo
+		border-left 7px solid white
+		border-top 20px solid transparent
+		content ""
+		left 0px
+		position absolute
+		top 0
+		
 
 	.menu
 		height 40px
