@@ -14,8 +14,6 @@ nav{background:#22bce0;border-left:15px solid #fff;}
 nav .menu{height:40px;line-height:40px;margin:0;padding:0;overflow-x:auto;white-space:nowrap;}
 nav .menu li{display:inline-block;}
 nav .menu li a{color:#fff;display:block;margin:0 .5em;padding:0 .2em;text-decoration:none;}
-nav .menu li a:before{content:"- "}
-nav .menu li a:after{content:" -"}
 nav .menu li a:hover{background:rgba(0,0,0,0.1)}
 .left{float:left}
 .right{float:right}
