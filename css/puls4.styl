@@ -150,6 +150,9 @@ nav
 		overflow-x auto //activa el scroll vertical
 		white-space nowrap // desactiva el wrap que hace el salto de linea
 
+		&::-webkit-scrollbar //shadow DOM elimina el scrollbar en windows
+			display none
+
 		li
 			display inline-block //list vertical sin bullets
 
@@ -255,3 +258,26 @@ nav
 					vertical-align top
 					width 120px
 
+
+//instrucciones para responsive design
+@media screen and (min-width: 768px)
+	header
+		.titular
+			.publicar
+				font-size 1.1em
+				padding-left 3em
+				position relative
+				
+				&:before
+					font-size 2.5em
+					left 0
+					position absolute
+					top -10px // alinea la pluma
+
+	.posts
+		.post
+			display inline-block
+			width 48%
+			vertical-align top
+			&:nth-child(odd) // posts impares
+				margin-right 2%
