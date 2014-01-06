@@ -1,12 +1,46 @@
 azul = #22BCE0
 naranja = #DD4F24
+gris_texto = #7A7A7A
 gris_oscuro = #444
+
+@font-face {
+	font-family: 'iconitos';
+	src:url('../fonts/icomoon.eot');
+	src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.woff') format('woff'),
+		url('../fonts/icomoon.ttf') format('truetype'),
+		url('../fonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+a
+	color naranja
 
 body
 	background #E8E8E8
 	color gris_oscuro
 	font-family Arial
 	font-size 16px
+
+footer
+	background naranja
+	color rgba(white, 0.5)
+	padding 1em 0
+	text-align center
+	width 100%
+	
+	h3
+		font-size 14px
+		font-weight normal
+
+		strong
+			display block //salto de linea
+
+		.mejor
+			&:before
+			&:after
+				content " - "
 
 header 
 	background gris_oscuro
@@ -19,6 +53,7 @@ header
 
 	.logo
 		border-right 1px solid azul
+		float left
 		width 60px
 
 		img
@@ -33,13 +68,25 @@ header
 			font-style italic
 			font-weight bold
 			text-decoration none
+
+
 		.publicar
 			background naranja
-			float right
 			color white
+			float right
 			font-style italic
 			padding 0.2em 0.5em
+			text-decoration none
 			text-shadow 1px 1px 0px black
+
+			&:before
+				content "\e603"
+				display inline-block
+				font-family "iconitos"
+				margin 0 3px 0 0
+				text-shadow none
+
+
 		.titulo
 			font-size 18px
 			font-weight normal
@@ -71,6 +118,13 @@ header
 				top 15px
 				width 50%
 				z-index 0
+
+				&:after
+					content "\e601"
+					display block
+					font-family "iconitos"
+					margin 1px 0 0 1px
+					text-shadow 1px 1px 0px black
 
 
 nav 
@@ -109,9 +163,95 @@ nav
 				&:hover
 					background rgba(black,0.1)
 
+.posts
+	padding 0.5em
 
-.left
-	float left
+	.post
+		background white
+		border-radius 0 0 0.5em 0.5em // redondea esquinas inferiores
+		box-shadow 2px 2px 10px rgba(black, 0.5) // sombreado
+		color gris_texto
+		margin-bottom 0.5em
 
-.right
-	float right
+		.acciones
+			border-top 3px solid azul
+			padding 0.5em
+			overflow hidden //recalcula la altura para que se tome en cuenta
+
+			.datos
+				float right
+
+				.comentarios
+					background gris_oscuro
+					border-radius 3px
+					color white
+					padding 2px 5px
+					margin 0 1em 0 0
+					text-decoration none
+
+				.estrellita
+					text-decoration none
+
+					&:after
+						color #FCB92D
+						content "\e602"
+						font-family "iconitos"
+						font-size 1.1em
+
+			.votos
+				float left
+
+				.down
+				.up
+					text-decoration none
+					&:before
+						font-family "iconitos"
+						font-size 1.5em
+						vertical-align middle
+
+				.down
+					color red
+					&:before
+						content "\e601"
+
+				.up
+					color green
+					&:before
+						content "\e600"
+
+		.descripcion
+			
+			.detalles
+				height 160px
+				margin-left 130px // 10px pero se le agregan al width del img
+				
+
+				.autor
+					margin 0.5em 0 2em 0 // alinea el autor
+
+				.fecha 
+					float right
+					margin 0 1em 0 0 
+				
+				.tag
+					background azul
+					border-radius 0.5em
+					color white
+					padding 0.2em 0.5em
+					text-decoration none
+
+				.titulo
+					color gris_oscuro
+					font-size 18px
+					font-style italic
+					margin 0
+					padding 0.5em 0.5em 0 0
+
+			.imagen
+				float left //Hace que el texto este al lado de la foto
+
+				img
+					height 160px
+					vertical-align top
+					width 120px
+
