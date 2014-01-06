@@ -1,4 +1,5 @@
 azul = #22BCE0
+naranja = #DD4F24
 gris_oscuro = #444
 
 body
@@ -9,8 +10,11 @@ body
 
 header 
 	background gris_oscuro
+	box-shadow 0 5px 0 rgba(0,0,0,0.2)//Efecto de sombreado en el encabezado con negro con trasnparencia
 	color white
+	overflow hidden //cuando se cambia la resolucion se sale el logo 
 	padding 0.5em
+	position relative
 
 	.logo
 		border-right 1px solid azul
@@ -21,6 +25,19 @@ header
 	
 	.titular
 		margin 0 80px 0 70px
+		.filtro
+			color azul
+			font-size 14px
+			font-style italic
+			font-weight bold
+			text-decoration none
+		.publicar
+			background naranja
+			float right
+			color white
+			font-style italic
+			padding 0.2em 0.5em
+			text-shadow 1px 1px 0px black
 		.titulo
 			font-size 18px
 			font-weight normal
@@ -28,13 +45,53 @@ header
 			padding 0
 
 	.usuario
+		position absolute
+		right 10px
+		top 10px
+
 		.avatar
+			margin 0 1.1em 0 0
+			position relative
+			z-index 69
+
 			img 
+				border-radius 50% //redondea la imgen
 				width 50px
-				border-radius 50%
+		.flechita
+				background naranja
+				color white
+				display block
+				padding 2px
+				position absolute
+				right 0
+				text-align right
+				text-decoration none
+				top 15px
+				width 50%
+				z-index 0
+
 
 nav 
 	background azul
+	border-left 15px solid white
+
+	.menu
+		height 40px
+		line-height 40px // hace mas alto el espacio el renglon del menu
+		margin 0
+		padding 0
+		overflow-x auto //activa el scroll vertical
+		white-space nowrap // desactiva el wrap que hace el salto de linea
+
+		li
+			display inline-block //list vertical sin bullets
+
+			a 
+				color white
+				display block
+				margin 0 0.5em
+				padding 0 0.2em //hacen mas grande el espacio de cada li
+				text-decoration none
 
 
 .left
