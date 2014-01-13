@@ -1,1 +1,11 @@
-header{background-color:#444;color:#fff;padding:1em}
+footer{background-color:#8f8f8f;color:#fff;padding:1em}
+header{background-color:#444;color:#fff;padding:1em;}
+header h1{font-size:18px;font-weight:normal;margin:0;padding:0}
+header .logo figure{border:1px dashed #bbb;height:52px;width:52px}
+header .usuario .avatar{border:1px dashed #bbb;border-radius:50px;height:50px;width:50px}
+section{padding:1.2em;}
+section article{border:1px solid #8f8f8f;border-bottom-left-radius:.8em;border-bottom-right-radius:.8em;margin-bottom:1.2em;overflow:hidden;}
+section article figure{background-color:#8f8f8f;height:160px;width:120px}
+section article h2{font-size:18px;color:#444}
+section article .acciones{border-top:3px solid #8f8f8f;min-height:3em;padding:.8em}
+section article .fecha{position:relative;right:20px}

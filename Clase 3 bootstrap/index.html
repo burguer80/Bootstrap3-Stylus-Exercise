@@ -10,7 +10,7 @@
 <body>
 	<header class="row">
 		<div class="logo col-xs-1">
-			<img src="imagenes/logo.png" alt="Puls4"/>
+			<figure></figure>
 		</div>
 		<div class="titular col-xs-10">
 			<h1 class="titulo">
@@ -18,18 +18,17 @@
 			</h1>
 			<div>
 				<a class="filtro" href="#">Stylus</a>
-				<a class="publicar"	href="#"> Publicar</a>
+				<a class="publicar pull-right btn btn-default"	href="#"> Publicar</a>
 			</div>
 		</div>
 		<div class="usuario col-xs-1">
 			<figure class="avatar">
-				<img src="imagenes/avatar.jpg" alt="freddier">
 			</figure>	
 				<a class="flechita" href="#"></a>
 		</div>
 	</header>
 	<nav>
-		<ul class="menu">
+		<ul class="menu nav nav-pills">
 			<li><a href="#">Python</a></li>
 			<li><a href="#">HTML5</a></li>
 			<li><a href="#">Javascript</a></li>
@@ -42,32 +41,32 @@
 			<li><a href="#">CSS3</a></li>
 		</ul>
 	</nav>
-	<section class="posts">
-		<div>
+	<section class="posts row">
+		<div class="col-sm-6">
 			<article class="post">
-			<div class="descripcion">
-				<figure class="imagen">
+			<div class="descripcion row">
+				<figure class="imagen col-xs-3">
 					<img src="imagenes/foto.jpg"/>
 				</figure>
-				<div class="detalles">
+				<div class="detalles col-xs-9">
 					<h2 class="titulo">
 						Colores, gradientes y texto 3D con Sass y Compass
 					</h2>
 					<p class="autor">
 						por <a href="#">Diana Reyes</a>
 					</p>
-					<a class="tag" href="#">CSS3</a>
-					<p class="fecha">hace <strong>20</strong> min</p> 
+					<a class="tag btn btn-default" href="#">CSS3</a>
+					<p class="fecha pull-right">hace <strong>20</strong> min</p> 
 				</div>	
 			</div>
 			<div class="acciones">
 				<div class="votos">
 					<a class="up" href="#"></a>
-					<span class="total">156</span>
+					<span class="total pull-left">156</span>
 					<a class="down" href="#"></a>
 				</div>
 				<div class="datos">
-					<a class="comentarios" href="#">
+					<a class="comentarios pull-right btn btn-primary" href="#">
 						10
 					</a>
 					<a class="estrellita" href="#"></a>
@@ -76,7 +75,7 @@
 		</article>
 		</div>
 	</section>
-	<footer>
+	<footer class="text-center">
 		<h3>
 			<strong>Powered by Platzi</strong>
 			<span class="mejor">
