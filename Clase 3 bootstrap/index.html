@@ -27,7 +27,7 @@
 				<a class="flechita" href="#"></a>
 		</div>
 	</header>
-	<nav>
+	<nav id="navigation">
 		<ul class="menu nav nav-pills">
 			<li><a href="#">Python</a></li>
 			<li><a href="#">HTML5</a></li>
@@ -89,9 +89,18 @@
 			return texto;
 		}
 
- 		var tiempos = [10,11,12, [3,4,5,6,], "hola"];
- 		tiempos.push(13);
+		function decirMiNombre(){
+			log("Mi nombre es " + decirMiNombre.nombre);
+		}
 
+ 		var persona = {};
+ 		persona.nombre = "pablo";
+ 		persona.edad = 35;
+ 		persona.pais = {
+ 			nombre: "Argentina",
+ 			codigo: "AR",
+ 			numero: 54,	
+		};
 
 	</script>
 </body>
