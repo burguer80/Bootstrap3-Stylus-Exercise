@@ -6,6 +6,7 @@
 	<title>Puls4: Comunidad para gente atractiva y millonaria</title>
 	<link rel="stylesheet" href="css/puls4.css" />
 	<link rel="stylesheet" href="css/normalize.css" />
+    <script src="jquery-2.1.0.min.js"></script>
 </head>
 <body>
 	<header>
@@ -202,5 +203,19 @@
 			</span>
 		</h3>
 	</footer>
+    <script>
+        
+        function darBienvenida() {
+            alert('Bienvenido');
+        }
+        
+        function hacerAlgoImportante() {
+            console.log('Estoy haciendo algo importante');
+        }
+
+        $(window)
+            .on('load', darBienvenida)
+            .on('load', hacerAlgoImportante);
+    </script>
 </body>
 </html>
